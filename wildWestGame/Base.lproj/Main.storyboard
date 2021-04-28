@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kwO-0k-kFh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -11,7 +11,7 @@
         <!--Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="wildWestGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" id="BYZ-38-t0r" customClass="MenuViewController" customModule="wildWestGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,15 +92,16 @@
                             <constraint firstItem="3Sz-Mv-4sr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xsX-Ca-nJB"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rw0-ga-eMP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.188405797101453" y="62.946428571428569"/>
+            <point key="canvasLocation" x="886.95652173913049" y="62.946428571428569"/>
         </scene>
         <!--Places View Controller-->
         <scene sceneID="TWW-RL-WRR">
             <objects>
-                <viewController id="kwO-0k-kFh" customClass="PlacesViewController" customModule="wildWestGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlacesViewController" id="kwO-0k-kFh" customClass="PlacesViewController" customModule="wildWestGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T8G-6M-8UJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,13 +197,14 @@
                             <constraint firstItem="fCj-tT-0Wx" firstAttribute="leading" secondItem="y7P-m2-GNR" secondAttribute="leading" constant="25" id="xts-EH-j0q"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qlg-GN-aNl"/>
                     <connections>
                         <outlet property="tableView" destination="7wJ-5Q-Oy5" id="02C-0f-PPf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hnd-aK-jTc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="933.33333333333337" y="62.946428571428569"/>
+            <point key="canvasLocation" x="1843.4782608695652" y="62.946428571428569"/>
         </scene>
     </scenes>
     <resources>

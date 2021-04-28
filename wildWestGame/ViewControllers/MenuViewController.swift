@@ -13,6 +13,10 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func placesButtonTapped(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newVC = storyboard.instantiateViewController(identifier: "PlacesViewController") as! PlacesViewController
+        newVC.modalPresentationStyle = .fullScreen
+        self.present(newVC, animated: true, completion: nil)
     }
     
     @IBAction func webButtonTapped(_ sender: Any) {

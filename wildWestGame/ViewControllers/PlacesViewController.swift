@@ -12,6 +12,10 @@ class PlacesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func backButtonPressed(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newVC = storyboard.instantiateViewController(identifier: "MenuViewController") as! MenuViewController
+        newVC.modalPresentationStyle = .fullScreen
+        self.present(newVC, animated: true, completion: nil)
     }
     
     private var dataFetcherService = DataFetcherService()
