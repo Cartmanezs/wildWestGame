@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class PlacesViewController: UIViewController {
 
@@ -46,6 +47,8 @@ extension PlacesViewController: UITableViewDataSource {
         let place = places[indexPath.row]
         cell.cityLabel.text = place?.city
         cell.countyLabel.text = place?.country
+        //setImage(from: (place?.image), feedImage: cell.placeImageView)
+        
         return cell
     }
 }
