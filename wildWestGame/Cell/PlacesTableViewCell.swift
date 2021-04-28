@@ -15,6 +15,12 @@ class PlacesTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        countyLabel.lineBreakMode = .byWordWrapping
+        countyLabel.numberOfLines = 3
+        
+        cityLabel.lineBreakMode = .byWordWrapping
+        cityLabel.numberOfLines = 3
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

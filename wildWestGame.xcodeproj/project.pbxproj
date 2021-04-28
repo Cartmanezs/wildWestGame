@@ -24,9 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D8D3A24864AADCA33999802 /* Pods-wildWestGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wildWestGame.release.xcconfig"; path = "Target Support Files/Pods-wildWestGame/Pods-wildWestGame.release.xcconfig"; sourceTree = "<group>"; };
-		9E5E074FB38B3C2E4289ABF6 /* Pods-wildWestGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wildWestGame.debug.xcconfig"; path = "Target Support Files/Pods-wildWestGame/Pods-wildWestGame.debug.xcconfig"; sourceTree = "<group>"; };
 		A11768325B9B39004A78BD1A /* Pods_wildWestGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wildWestGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7684671D297559013CEB94E /* Pods-wildWestGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wildWestGame.debug.xcconfig"; path = "Target Support Files/Pods-wildWestGame/Pods-wildWestGame.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0A223B26395CF80001D6ED /* wildWestGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wildWestGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0A223E26395CF80001D6ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0A224026395CF80001D6ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		CE68D06C263969E5006A949E /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
 		CE68D06F26397B88006A949E /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		CE68D07226397D6B006A949E /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
+		E7B024DCDDE67FE144F9EB49 /* Pods-wildWestGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wildWestGame.release.xcconfig"; path = "Target Support Files/Pods-wildWestGame/Pods-wildWestGame.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +64,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4F8F51AA4FA44E208EDA7033 /* Pods */ = {
+		B7A24F5036921DF57CF12887 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9E5E074FB38B3C2E4289ABF6 /* Pods-wildWestGame.debug.xcconfig */,
-				2D8D3A24864AADCA33999802 /* Pods-wildWestGame.release.xcconfig */,
+				A7684671D297559013CEB94E /* Pods-wildWestGame.debug.xcconfig */,
+				E7B024DCDDE67FE144F9EB49 /* Pods-wildWestGame.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -79,8 +79,8 @@
 			children = (
 				CE0A223D26395CF80001D6ED /* wildWestGame */,
 				CE0A223C26395CF80001D6ED /* Products */,
-				4F8F51AA4FA44E208EDA7033 /* Pods */,
 				2C7D4F2AA5929DDDB971E021 /* Frameworks */,
+				B7A24F5036921DF57CF12887 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,7 +156,7 @@
 				CE0A223726395CF80001D6ED /* Sources */,
 				CE0A223826395CF80001D6ED /* Frameworks */,
 				CE0A223926395CF80001D6ED /* Resources */,
-				A6BFADC1EC9CF2D5002AB7C6 /* [CP] Embed Pods Frameworks */,
+				2ABCDC7D42D03385D198A54D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +213,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2ABCDC7D42D03385D198A54D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wildWestGame/Pods-wildWestGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wildWestGame/Pods-wildWestGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wildWestGame/Pods-wildWestGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3528ABDFFE61091029CDE09C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,23 +250,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A6BFADC1EC9CF2D5002AB7C6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wildWestGame/Pods-wildWestGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wildWestGame/Pods-wildWestGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wildWestGame/Pods-wildWestGame-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -412,7 +412,7 @@
 		};
 		CE0A225026395CFC0001D6ED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E5E074FB38B3C2E4289ABF6 /* Pods-wildWestGame.debug.xcconfig */;
+			baseConfigurationReference = A7684671D297559013CEB94E /* Pods-wildWestGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -432,7 +432,7 @@
 		};
 		CE0A225126395CFC0001D6ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D8D3A24864AADCA33999802 /* Pods-wildWestGame.release.xcconfig */;
+			baseConfigurationReference = E7B024DCDDE67FE144F9EB49 /* Pods-wildWestGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

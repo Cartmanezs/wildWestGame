@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SDWebImage
 
 class PlacesViewController: UIViewController {
 
@@ -34,6 +33,24 @@ class PlacesViewController: UIViewController {
             self.tableView.reloadData()
         }
     }
+    
+    private func getImage(from string: String) -> UIImage? {
+        guard let url = URL(string: string)
+            else {
+                print("Unable to create URL")
+                return nil
+        }
+
+        var image: UIImage? = nil
+        do {
+            let data = try Data(contentsOf: url, options: [])
+            image = UIImage(data: data)
+        }
+        catch {
+            print(error.localizedDescription)
+        }
+        return image
+    }
 }
 
 extension PlacesViewController: UITableViewDataSource {
@@ -47,7 +64,10 @@ extension PlacesViewController: UITableViewDataSource {
         let place = places[indexPath.row]
         cell.cityLabel.text = place?.city
         cell.countyLabel.text = place?.country
-        //setImage(from: (place?.image), feedImage: cell.placeImageView)
+        
+        if let image = getImage(from: (place?.image)!) {
+            cell.placeImageView.image = image
+        }
         
         return cell
     }
