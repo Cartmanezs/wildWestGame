@@ -11,6 +11,7 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet var buttons: [UIButton]!
+    @IBOutlet weak var restartButton: UIButton!
     
     @IBAction func restartButtonPressed(_ sender: Any) {
         resetGame()
@@ -28,35 +29,40 @@ class GameViewController: UIViewController {
             let image = UIImage(named: buttonImages[sender.tag - 1])
             sender.setImage(image, for: .normal)
             UIView.transition(with: sender, duration: 0.3, options: .transitionFlipFromRight, animations: nil, completion: nil)
-            if sender.imageView?.image == UIImage(named: currentImages.first ?? "") {
-                currentImages.removeAll()
-            } else if !currentImages.isEmpty {
-                let image = UIImage(named: "box")
-                sender.setImage(image, for: .normal)
-                UIView.transition(with: sender, duration: 0.3, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+            if sender.imageView?.image == UIImage(named: currentImage) {
+                scorePoints += 10
+                currentImage = ""
+            } else if !currentImage.isEmpty {
+                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500), execute: {
+                    let image = UIImage(named: "box")
+                    sender.setImage(image, for: .normal)
+                    UIView.transition(with: sender, duration: 0.3, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+                })
+                 scorePoints -= 5
             } else {
-                currentImages.append(buttonImages[sender.tag - 1])
+                currentImage = buttonImages[sender.tag - 1]
             }
         }
         scoreLabel.text = "Score: \(scorePoints)"
     }
     
     private var buttonImages = ["cowboy","cowboy2","hat","rev","kar","dead","cowboy","cowboy2","hat","rev","kar","dead"]
-    private var currentImages: [String] = []
+    private var currentImage = ""
     private var scorePoints = 0
     private var indexElement = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         resetGame()
-        scoreLabel.text = "Score: \(scorePoints)"
-        buttonImages.shuffle()
     }
     
     private func resetGame() {
         for button in buttons {
             button.setImage(UIImage(named: "box"), for: .normal)
         }
+        scorePoints = 0
+        scoreLabel.text = "Score: \(scorePoints)"
         buttonImages.shuffle()
+        currentImage = ""
     }
 }

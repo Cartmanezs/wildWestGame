@@ -487,6 +487,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="restartButton" destination="iuf-lh-Amv" id="R9k-Yu-lkW"/>
                         <outlet property="scoreLabel" destination="rLM-0c-boS" id="9Al-C0-Sc8"/>
                         <outletCollection property="buttons" destination="06R-Tf-bT8" collectionClass="NSMutableArray" id="EC4-Qi-S1P"/>
                         <outletCollection property="buttons" destination="xWg-47-o6u" collectionClass="NSMutableArray" id="e7o-Ot-ImQ"/>
