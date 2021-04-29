@@ -25,9 +25,11 @@ class GameViewController: UIViewController {
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         if sender.imageView?.image == UIImage(named: "box") {
+            
             let image = UIImage(named: buttonImages[sender.tag - 1])
             sender.setImage(image, for: .normal)
             UIView.transition(with: sender, duration: 0.3, options: .transitionFlipFromRight, animations: nil, completion: nil)
+            
             if sender.imageView?.image == UIImage(named: currentImage) {
                 scorePoints += 10
                 currentImage = ""
@@ -37,7 +39,7 @@ class GameViewController: UIViewController {
                     sender.setImage(image, for: .normal)
                     UIView.transition(with: sender, duration: 0.3, options: .transitionFlipFromLeft, animations: nil, completion: nil)
                 })
-                 scorePoints -= 5
+                scorePoints -= 5
             } else {
                 currentImage = buttonImages[sender.tag - 1]
             }
