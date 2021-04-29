@@ -206,31 +206,39 @@
             </objects>
             <point key="canvasLocation" x="1843.4782608695652" y="62.946428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="IkB-h1-Bb6">
             <objects>
-                <viewController id="KeB-Jo-ylZ" sceneMemberID="viewController">
+                <viewController id="KeB-Jo-ylZ" customClass="WebViewController" customModule="wildWestGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xaZ-gg-YNc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fOI-hj-83I">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOI-hj-83I">
+                                <rect key="frame" x="0.0" y="100" width="414" height="713"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTS-xS-64d">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTS-xS-64d">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="x7L-ii-Ukn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fOI-hj-83I" firstAttribute="top" secondItem="pTS-xS-64d" secondAttribute="bottom" id="397-OM-0To"/>
+                            <constraint firstItem="x7L-ii-Ukn" firstAttribute="trailing" secondItem="pTS-xS-64d" secondAttribute="trailing" id="WWh-3x-SKt"/>
+                            <constraint firstItem="pTS-xS-64d" firstAttribute="top" secondItem="x7L-ii-Ukn" secondAttribute="top" id="lAg-Y7-PLg"/>
+                            <constraint firstItem="pTS-xS-64d" firstAttribute="leading" secondItem="x7L-ii-Ukn" secondAttribute="leading" id="nPb-mn-jWg"/>
+                            <constraint firstItem="fOI-hj-83I" firstAttribute="bottom" secondItem="x7L-ii-Ukn" secondAttribute="bottom" id="ruf-Af-hbC"/>
+                            <constraint firstItem="fOI-hj-83I" firstAttribute="leading" secondItem="x7L-ii-Ukn" secondAttribute="leading" id="uha-pH-O6b"/>
+                            <constraint firstItem="fOI-hj-83I" firstAttribute="trailing" secondItem="x7L-ii-Ukn" secondAttribute="trailing" id="wez-f9-HR0"/>
+                        </constraints>
                     </view>
                     <toolbarItems>
                         <barButtonItem systemItem="rewind" id="mHi-6s-Q7f"/>
@@ -243,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Az-6U-k0f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2582.608695652174" y="770.75892857142856"/>
+            <point key="canvasLocation" x="2582.608695652174" y="770.08928571428567"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="5eb-fO-XZa">
@@ -509,17 +517,19 @@
         <!--Navigation Controller-->
         <scene sceneID="5An-8j-RDY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="tBF-MX-u0W" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" toolbarHidden="NO" id="tBF-MX-u0W" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vVy-LI-TTQ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="loP-4v-oDC">
                         <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </toolbar>
                     <connections>
                         <segue destination="KeB-Jo-ylZ" kind="relationship" relationship="rootViewController" id="scs-l5-aEQ"/>
