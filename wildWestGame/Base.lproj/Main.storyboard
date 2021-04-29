@@ -421,9 +421,9 @@
                                     <constraint firstAttribute="height" constant="100" id="Na1-L4-CgC"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLM-0c-boS">
-                                <rect key="frame" x="244" y="79" width="140" height="50"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLM-0c-boS">
+                                <rect key="frame" x="245.5" y="79" width="200" height="50"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -432,11 +432,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rLM-0c-boS" firstAttribute="centerY" secondItem="zMC-vB-iM5" secondAttribute="centerY" id="Qvr-0d-2sC"/>
-                            <constraint firstItem="rLM-0c-boS" firstAttribute="centerX" secondItem="zMC-vB-iM5" secondAttribute="centerX" id="XoR-ks-EW4"/>
+                            <constraint firstItem="rLM-0c-boS" firstAttribute="centerX" secondItem="zMC-vB-iM5" secondAttribute="centerX" multiplier="1.1" id="XoR-ks-EW4"/>
                             <constraint firstItem="pd0-aq-lx1" firstAttribute="bottom" secondItem="Jjl-r0-0gh" secondAttribute="bottom" constant="10" id="aFj-xe-rLc"/>
                             <constraint firstItem="oqU-b6-Swy" firstAttribute="centerX" secondItem="alV-Ib-atG" secondAttribute="centerX" id="an6-nf-nBC"/>
                             <constraint firstItem="zMC-vB-iM5" firstAttribute="top" secondItem="pd0-aq-lx1" secondAttribute="top" constant="10" id="feT-hu-UWN"/>
-                            <constraint firstItem="rLM-0c-boS" firstAttribute="width" secondItem="zMC-vB-iM5" secondAttribute="width" multiplier="0.7" id="gzw-PC-D6K"/>
+                            <constraint firstItem="rLM-0c-boS" firstAttribute="width" secondItem="zMC-vB-iM5" secondAttribute="width" id="gzw-PC-D6K"/>
                             <constraint firstAttribute="bottom" secondItem="oVQ-pg-LDD" secondAttribute="bottom" id="hdj-g7-Ntl"/>
                             <constraint firstItem="oqU-b6-Swy" firstAttribute="centerY" secondItem="alV-Ib-atG" secondAttribute="centerY" id="jzd-pQ-NM9"/>
                             <constraint firstItem="oVQ-pg-LDD" firstAttribute="leading" secondItem="pd0-aq-lx1" secondAttribute="leading" id="kRm-ba-JHx"/>
