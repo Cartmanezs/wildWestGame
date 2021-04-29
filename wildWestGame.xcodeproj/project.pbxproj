@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		CE0A223F26395CF80001D6ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0A223E26395CF80001D6ED /* AppDelegate.swift */; };
 		CE0A224126395CF80001D6ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0A224026395CF80001D6ED /* SceneDelegate.swift */; };
-		CE0A224326395CF80001D6ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0A224226395CF80001D6ED /* ViewController.swift */; };
+		CE0A224326395CF80001D6ED /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0A224226395CF80001D6ED /* MenuViewController.swift */; };
 		CE0A224626395CF80001D6ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0A224426395CF80001D6ED /* Main.storyboard */; };
 		CE0A224826395CFC0001D6ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0A224726395CFC0001D6ED /* Assets.xcassets */; };
 		CE0A224B26395CFC0001D6ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0A224926395CFC0001D6ED /* LaunchScreen.storyboard */; };
+		CE12646726399D8D00037658 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12646626399D8D00037658 /* GameViewController.swift */; };
+		CE64795D263AE8A800A7D95F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64795C263AE8A800A7D95F /* WebViewController.swift */; };
+		CE68D06026396919006A949E /* PlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68D05F26396919006A949E /* PlacesModel.swift */; };
+		CE68D0642639696C006A949E /* NetworkingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68D0632639696C006A949E /* NetworkingProtocols.swift */; };
+		CE68D067263969A7006A949E /* PlacesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68D066263969A7006A949E /* PlacesRequest.swift */; };
+		CE68D06A263969BF006A949E /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68D069263969BF006A949E /* NetworkDataFetcher.swift */; };
+		CE68D06D263969E5006A949E /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68D06C263969E5006A949E /* DataFetcherService.swift */; };
+		CE68D07026397B88006A949E /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68D06F26397B88006A949E /* PlacesViewController.swift */; };
+		CE68D07326397D6B006A949E /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68D07226397D6B006A949E /* PlacesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE0A223B26395CF80001D6ED /* wildWestGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wildWestGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0A223E26395CF80001D6ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0A224026395CF80001D6ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE0A224226395CF80001D6ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE0A224226395CF80001D6ED /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CE0A224526395CF80001D6ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE0A224726395CFC0001D6ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0A224A26395CFC0001D6ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0A224C26395CFC0001D6ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE12646626399D8D00037658 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CE64795C263AE8A800A7D95F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		CE68D05F26396919006A949E /* PlacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesModel.swift; sourceTree = "<group>"; };
+		CE68D0632639696C006A949E /* NetworkingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProtocols.swift; sourceTree = "<group>"; };
+		CE68D066263969A7006A949E /* PlacesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesRequest.swift; sourceTree = "<group>"; };
+		CE68D069263969BF006A949E /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		CE68D06C263969E5006A949E /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
+		CE68D06F26397B88006A949E /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		CE68D07226397D6B006A949E /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,56 @@
 		CE0A223D26395CF80001D6ED /* wildWestGame */ = {
 			isa = PBXGroup;
 			children = (
+				CE68D07626398256006A949E /* Cell */,
+				CE68D07526398246006A949E /* ViewControllers */,
+				CE68D0622639695E006A949E /* Services */,
+				CE68D05E2639690B006A949E /* Model */,
 				CE0A223E26395CF80001D6ED /* AppDelegate.swift */,
 				CE0A224026395CF80001D6ED /* SceneDelegate.swift */,
-				CE0A224226395CF80001D6ED /* ViewController.swift */,
 				CE0A224426395CF80001D6ED /* Main.storyboard */,
 				CE0A224726395CFC0001D6ED /* Assets.xcassets */,
 				CE0A224926395CFC0001D6ED /* LaunchScreen.storyboard */,
 				CE0A224C26395CFC0001D6ED /* Info.plist */,
 			);
 			path = wildWestGame;
+			sourceTree = "<group>";
+		};
+		CE68D05E2639690B006A949E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE68D05F26396919006A949E /* PlacesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE68D0622639695E006A949E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE68D0632639696C006A949E /* NetworkingProtocols.swift */,
+				CE68D066263969A7006A949E /* PlacesRequest.swift */,
+				CE68D069263969BF006A949E /* NetworkDataFetcher.swift */,
+				CE68D06C263969E5006A949E /* DataFetcherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE68D07526398246006A949E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE0A224226395CF80001D6ED /* MenuViewController.swift */,
+				CE12646626399D8D00037658 /* GameViewController.swift */,
+				CE68D06F26397B88006A949E /* PlacesViewController.swift */,
+				CE64795C263AE8A800A7D95F /* WebViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE68D07626398256006A949E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE68D07226397D6B006A949E /* PlacesTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +196,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0A224326395CF80001D6ED /* ViewController.swift in Sources */,
+				CE68D07026397B88006A949E /* PlacesViewController.swift in Sources */,
+				CE68D06A263969BF006A949E /* NetworkDataFetcher.swift in Sources */,
+				CE0A224326395CF80001D6ED /* MenuViewController.swift in Sources */,
+				CE68D06026396919006A949E /* PlacesModel.swift in Sources */,
+				CE68D0642639696C006A949E /* NetworkingProtocols.swift in Sources */,
+				CE68D07326397D6B006A949E /* PlacesTableViewCell.swift in Sources */,
+				CE68D067263969A7006A949E /* PlacesRequest.swift in Sources */,
+				CE64795D263AE8A800A7D95F /* WebViewController.swift in Sources */,
 				CE0A223F26395CF80001D6ED /* AppDelegate.swift in Sources */,
 				CE0A224126395CF80001D6ED /* SceneDelegate.swift in Sources */,
+				CE12646726399D8D00037658 /* GameViewController.swift in Sources */,
+				CE68D06D263969E5006A949E /* DataFetcherService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
