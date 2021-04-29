@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tBF-MX-u0W">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -209,45 +209,59 @@
         <!--Web View Controller-->
         <scene sceneID="IkB-h1-Bb6">
             <objects>
-                <viewController id="KeB-Jo-ylZ" customClass="WebViewController" customModule="wildWestGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" id="KeB-Jo-ylZ" customClass="WebViewController" customModule="wildWestGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xaZ-gg-YNc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOI-hj-83I">
-                                <rect key="frame" x="0.0" y="100" width="414" height="713"/>
+                                <rect key="frame" x="0.0" y="124" width="414" height="689"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <searchBar contentMode="redraw" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTS-xS-64d">
-                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
-                                <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVY-9e-06z">
+                                <rect key="frame" x="15" y="44" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="8br-Tm-Z2g"/>
+                                    <constraint firstAttribute="height" constant="70" id="yit-p4-uE7"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backButtonMenuPressed:" destination="KeB-Jo-ylZ" eventType="touchUpInside" id="FDW-rK-uXF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="x7L-ii-Ukn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fOI-hj-83I" firstAttribute="top" secondItem="pTS-xS-64d" secondAttribute="bottom" id="397-OM-0To"/>
-                            <constraint firstItem="x7L-ii-Ukn" firstAttribute="trailing" secondItem="pTS-xS-64d" secondAttribute="trailing" id="WWh-3x-SKt"/>
-                            <constraint firstItem="pTS-xS-64d" firstAttribute="top" secondItem="x7L-ii-Ukn" secondAttribute="top" id="lAg-Y7-PLg"/>
-                            <constraint firstItem="pTS-xS-64d" firstAttribute="leading" secondItem="x7L-ii-Ukn" secondAttribute="leading" id="nPb-mn-jWg"/>
+                            <constraint firstItem="fOI-hj-83I" firstAttribute="top" secondItem="lVY-9e-06z" secondAttribute="bottom" constant="10" id="27q-F9-Yx7"/>
+                            <constraint firstItem="lVY-9e-06z" firstAttribute="leading" secondItem="x7L-ii-Ukn" secondAttribute="leading" constant="15" id="JeP-2p-YR7"/>
                             <constraint firstItem="fOI-hj-83I" firstAttribute="bottom" secondItem="x7L-ii-Ukn" secondAttribute="bottom" id="ruf-Af-hbC"/>
                             <constraint firstItem="fOI-hj-83I" firstAttribute="leading" secondItem="x7L-ii-Ukn" secondAttribute="leading" id="uha-pH-O6b"/>
                             <constraint firstItem="fOI-hj-83I" firstAttribute="trailing" secondItem="x7L-ii-Ukn" secondAttribute="trailing" id="wez-f9-HR0"/>
+                            <constraint firstItem="lVY-9e-06z" firstAttribute="top" secondItem="x7L-ii-Ukn" secondAttribute="top" id="yxu-zJ-2x2"/>
                         </constraints>
                     </view>
                     <toolbarItems>
-                        <barButtonItem systemItem="rewind" id="mHi-6s-Q7f"/>
-                        <barButtonItem systemItem="fastForward" id="mdw-hn-cOw"/>
-                        <barButtonItem systemItem="refresh" id="fl9-IX-zLk"/>
-                        <barButtonItem systemItem="stop" id="SUw-ne-sU6"/>
+                        <barButtonItem systemItem="rewind" id="mHi-6s-Q7f">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="KeB-Jo-ylZ" id="Ce5-n7-Jh4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="fastForward" id="mdw-hn-cOw">
+                            <connections>
+                                <action selector="forwardButtonPressed:" destination="KeB-Jo-ylZ" id="CV4-4B-hHQ"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="W3O-6f-All"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="fOI-hj-83I" id="MUg-a7-Kw1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Az-6U-k0f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
