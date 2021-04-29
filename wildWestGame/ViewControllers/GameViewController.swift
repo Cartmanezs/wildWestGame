@@ -8,6 +8,8 @@
 import UIKit
 
 class GameViewController: UIViewController {
+    
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet var buttons: [UIButton]!
     
     @IBAction func restartButtonPressed(_ sender: Any) {
@@ -34,15 +36,17 @@ class GameViewController: UIViewController {
     }
     
     private var buttonImages = ["cowboy","cowboy2","hat","rev","kar","dead","cowboy","cowboy2","hat","rev","kar","dead"]
+    private var scorePoints = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scoreLabel.text = "Score: \(scorePoints)"
         buttonImages.shuffle()
     }
     
     private func resetGame() {
         for button in buttons {
-            button.imageView?.image = UIImage(named: "box")
+            button.setImage(UIImage(named: "box"), for: .normal)
         }
         buttonImages.shuffle()
     }
