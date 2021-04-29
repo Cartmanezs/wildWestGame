@@ -243,8 +243,8 @@
                     <toolbarItems>
                         <barButtonItem systemItem="rewind" id="mHi-6s-Q7f"/>
                         <barButtonItem systemItem="fastForward" id="mdw-hn-cOw"/>
-                        <barButtonItem systemItem="stop" id="fl9-IX-zLk"/>
-                        <barButtonItem systemItem="refresh" id="SUw-ne-sU6"/>
+                        <barButtonItem systemItem="refresh" id="fl9-IX-zLk"/>
+                        <barButtonItem systemItem="stop" id="SUw-ne-sU6"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="W3O-6f-All"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
