@@ -11,7 +11,6 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet var buttons: [UIButton]!
-    @IBOutlet weak var restartButton: UIButton!
     
     @IBAction func restartButtonPressed(_ sender: Any) {
         resetGame()
